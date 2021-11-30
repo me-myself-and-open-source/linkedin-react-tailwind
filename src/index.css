@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-item {
+    @apply w-20 flex flex-col items-center text-gray-400 hover:text-gray-900 cursor-pointer;
+  }
+  .header-icon {
+    @apply text-center w-4 h-4;
+  }
+  .sidebar-card {
+    @apply bg-white rounded-lg border;
+  }
+  .sidebar-profile-item {
+    @apply text-xs text-gray-500 flex justify-between gap-2 px-3 hover:bg-gray-100 cursor-pointer;
+  }
+  .sidebar-profile-item-count {
+    @apply text-blue-500 font-bold;
+  }
+  .sidebar-recent-item {
+    @apply px-5 text-gray-400 hover:bg-gray-100 text-xs font-semibold cursor-pointer;
+  }
+  .body-height-calculated {
+    min-height: calc(100vh - 48px)
+  }
+  .write-post-button {
+    @apply flex p-2 rounded-lg hover:bg-gray-100 cursor-pointer;
+  }
+  .feed-card {
+    @apply bg-white rounded-lg border p-3;
+  }
+  .feed-item-button {
+    @apply flex justify-center flex-grow cursor-pointer hover:bg-gray-100  rounded-lg py-2;
+  }
+  .login-input {
+    @apply border w-full rounded-lg p-2;
+  }
+}
